@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data with Promises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #data {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        #error {
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fetch Data from Public API</h1>
+    <button id="fetchData">Fetch Random Dog Image</button>
+    <div id="data"></div>
+    <div id="error"></div>
+
+    <script src="fetch-data.js"></script>
+</body>
+
+</html>
