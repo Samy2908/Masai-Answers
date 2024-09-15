@@ -1,0 +1,71 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const button1 = document.getElementById('button1');
+    const button2 = document.getElementById('button2');
+    const button3 = document.getElementById('button3');
+
+    const message1 = document.getElementById('message1');
+    const message2 = document.getElementById('message2');
+    const message3 = document.getElementById('message3');
+
+    // Event Listeners for Button 1
+    button1.addEventListener('click', function () {
+        changeColor(button1);
+    });
+    button1.addEventListener('mouseover', function () {
+        showMessage(message1);
+    });
+    button1.addEventListener('mouseout', function () {
+        hideMessage(message1);
+    });
+    button1.addEventListener('dblclick', function () {
+        hideButton(button1);
+    });
+
+    // Event Listeners for Button 2
+    button2.addEventListener('click', function () {
+        changeColor(button2);
+    });
+    button2.addEventListener('mouseover', function () {
+        showMessage(message2);
+    });
+    button2.addEventListener('mouseout', function () {
+        hideMessage(message2);
+    });
+    button2.addEventListener('dblclick', function () {
+        hideButton(button2);
+    });
+
+    // Event Listeners for Button 3
+    button3.addEventListener('click', function () {
+        changeColor(button3);
+    });
+    button3.addEventListener('mouseover', function () {
+        showMessage(message3);
+    });
+    button3.addEventListener('mouseout', function () {
+        hideMessage(message3);
+    });
+    button3.addEventListener('dblclick', function () {
+        hideButton(button3);
+    });
+
+    // Change color on click
+    function changeColor(button) {
+        button.style.backgroundColor = 'lightblue';
+    }
+
+    // Show message on mouseover
+    function showMessage(message) {
+        message.style.display = 'block';
+    }
+
+    // Hide message on mouseout
+    function hideMessage(message) {
+        message.style.display = 'none';
+    }
+
+    // Hide button on double click
+    function hideButton(button) {
+        button.style.display = 'none';
+    }
+});
